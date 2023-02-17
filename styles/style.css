@@ -69,3 +69,22 @@
 }
 
 
+/* Blog styles  */
+.header-title{
+    font-family: 'Inter';
+
+}
+.blog-title{
+    font-family: 'Inter';
+    color: darkgreen;
+    font-weight: 700px;
+    font-size: 30px;
+}
+.answer-p{
+    font-size: 19px;
+    font-family: 'Inter';
+    color: #414141;
+
+
+}
+
