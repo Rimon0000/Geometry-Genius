@@ -14,6 +14,12 @@ function getTextFieldValue(textId){
     const textValue = parseFloat(textValueString);
     return textValue;
 }
+//function get title
+function getTitle(titleId){
+    const titleField = document.getElementById(titleId);
+    const titleElement = titleField.innerText;
+    return titleElement;
+}
 
 //addEventListener for triangle
 document.getElementById('btn-triangle').addEventListener('click', function(){
@@ -21,7 +27,19 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleHValue = getInputFieldValue('triangle-h-field');
     //calculate
     const triangle = 0.5 * triangleBValue * triangleHValue;
-    console.log(triangle)
+      //get title
+      const title = getTitle('title-triangle');
+      console.log(title,triangle)
+
+      const container = document.getElementById('table-container');
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+      <td>${1}</td>
+      <td>${title}</td>
+      <td>${triangle}cm <sup>2</sup></td>
+      `;
+      container.appendChild(tr)
+
 })
 
 //addEventListener for rectangle
