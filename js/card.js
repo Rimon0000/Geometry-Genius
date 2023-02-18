@@ -25,8 +25,16 @@ function getTitle(titleId){
 document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleBValue =  getInputFieldValue('triangle-b-field')
     const triangleHValue = getInputFieldValue('triangle-h-field');
+    
+    // //validation
+    if (triangleBValue === null || triangleBValue === "" || isNaN(parseInt(triangleBValue)) || parseInt(triangleBValue) <= 0 ||
+        triangleHValue === null || triangleHValue === "" || isNaN(parseInt(triangleHValue)) || parseInt(triangleHValue) <= 0) {
+         alert("Please Provide right Number.");
+         return;
+        } 
     //calculate
-    const triangle = 0.5 * triangleBValue * triangleHValue;
+    const triangleValue = 0.5 * triangleBValue * triangleHValue;
+    const triangle = triangleValue.toFixed(2);
       //get title
       const title = getTitle('title-triangle');
 
@@ -46,8 +54,18 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
 document.getElementById('btn-rectangle').addEventListener('click', function(){
     const rectangleWValue = getInputFieldValue('rectangleWField')
     const rectangleLValue = getInputFieldValue('rectangleLField')
+
+    // //validation
+    if (rectangleWValue === null || rectangleWValue === "" || isNaN(parseInt(rectangleWValue)) || parseInt(rectangleWValue) <= 0 ||
+        rectangleLValue === null || rectangleLValue === "" || isNaN(parseInt(rectangleLValue)) || parseInt(rectangleLValue) <= 0) {
+         alert("Please Provide right Number.");
+         return;
+        } 
+
     //calculate area
-    const rectangle = rectangleWValue * rectangleLValue;
+    const rectangleValue = rectangleWValue * rectangleLValue;
+    const rectangle = rectangleValue.toFixed(2);
+
     //get title
     const title = getTitle('title-rectangle');
 
@@ -69,6 +87,7 @@ document.getElementById('btn-Parallelogram').addEventListener('click', function(
     
     //calculate
     const Parallelogram = ParaBValue * ParaHValue;
+    
     //get title
     const title = getTitle('title-parallelogram');
 
