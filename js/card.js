@@ -223,38 +223,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
 
 
 
-
-// random color 
-// function randomColor() {
-//     // generate random RGB color values
-//     var red = Math.floor(Math.random() * 256);
-//     var green = Math.floor(Math.random() * 256);
-//     var blue = Math.floor(Math.random() * 256);
-
-//     // set background color for shopping card element
-//     var Card = document.getElementById('random-bg');
-//     Card.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-// }
-
-// // add event listener to the shopping card element
-// document.getElementById('random-bg').addEventListener('mouseover', function() {
-//     randomColor();
-// });
-
-// function randomColor() {
-//     var red = Math.floor(Math.random() * 256);
-//     var green = Math.floor(Math.random() * 256);
-//     var blue = Math.floor(Math.random() * 256);
-//     return "rgb(" + red + "," + green + "," + blue + ")";
-//   }
-  
-//   // select all the child divs of the parent div and set a random background color for each
-//   var children = document.querySelectorAll("#row .random-bg");
-//   for (var i = 0; i < children.length; i++) {
-//     children[i].style.backgroundColor = randomColor();
-//   }
-
-// define the randomColor function
+// randomColor function
 function randomColor(elementId) {
     // generate random RGB color values
     var red = Math.floor(Math.random() * 256);
@@ -265,7 +234,7 @@ function randomColor(elementId) {
     document.getElementById(elementId).style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
-// add event listener to the element with id "myDiv"
+// add event listener
 document.getElementById("random-color").addEventListener('mouseover', function() {
     randomColor("random-bg");
     randomColor("random-bg2");
