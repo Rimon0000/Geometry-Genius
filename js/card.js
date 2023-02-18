@@ -29,8 +29,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangle = 0.5 * triangleBValue * triangleHValue;
       //get title
       const title = getTitle('title-triangle');
-      console.log(title,triangle)
 
+    //   create and set value
       const container = document.getElementById('table-container');
       const tr = document.createElement("tr");
       tr.innerHTML = `
@@ -48,7 +48,18 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     const rectangleLValue = getInputFieldValue('rectangleLField')
     //calculate area
     const rectangle = rectangleWValue * rectangleLValue;
-    console.log(rectangle)
+    //get title
+    const title = getTitle('title-rectangle');
+
+    //   create and set value
+      const container = document.getElementById('table-container');
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+      <td>${2}</td>
+      <td>${title}</td>
+      <td>${rectangle}cm <sup>2</sup></td>
+      `;
+      container.appendChild(tr)
 })
 
 //addEventListener for Parallelogram
@@ -58,7 +69,19 @@ document.getElementById('btn-Parallelogram').addEventListener('click', function(
     
     //calculate
     const Parallelogram = ParaBValue * ParaHValue;
-    console.log(Parallelogram)
+    //get title
+    const title = getTitle('title-parallelogram');
+
+    //   create and set value
+      const container = document.getElementById('table-container');
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+      <td>${3}</td>
+      <td>${title}</td>
+      <td>${Parallelogram}cm <sup>2</sup></td>
+      `;
+      container.appendChild(tr)
+    
 })
 
 //addEventListener for Rhombus
@@ -68,7 +91,18 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
 
     //calculate
     rhombus = 0.5 * rhombusD1Value * rhombusD2Value;
-    console.log(rhombus);
+    //get title
+    const title = getTitle('title-rhombus');
+
+    //   create and set value
+      const container = document.getElementById('table-container');
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+      <td>${4}</td>
+      <td>${title}</td>
+      <td>${rhombus}cm <sup>2</sup></td>
+      `;
+      container.appendChild(tr)
 })
 
 //addEventListener for Pentagon
@@ -78,7 +112,18 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 
     //calculate
     const pentagon = 0.5 * pentagonPValue * pentagonBValue;
-    console.log(pentagon);
+     //get title
+     const title = getTitle('title-pentagon');
+
+     //   create and set value
+       const container = document.getElementById('table-container');
+       const tr = document.createElement("tr");
+       tr.innerHTML = `
+       <td>${5}</td>
+       <td>${title}</td>
+       <td>${pentagon}cm <sup>2</sup></td>
+       `;
+       container.appendChild(tr)
 })
 
 //addEventListener for Ellipse
@@ -89,7 +134,18 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     //calculate
     const ellipseValue = 3.14 * ellipseAValue * ellipseBValue;
     const ellipse = ellipseValue.toFixed(2)
-    console.log(ellipse)
+     //get title
+     const title = getTitle('title-ellipse');
+
+     //   create and set value
+       const container = document.getElementById('table-container');
+       const tr = document.createElement("tr");
+       tr.innerHTML = `
+       <td>${6}</td>
+       <td>${title}</td>
+       <td>${ellipse}cm <sup>2</sup></td>
+       `;
+       container.appendChild(tr)
 })
 
 
