@@ -38,6 +38,13 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
       //get title
       const title = getTitle('title-triangle');
 
+       //create button
+       var button = document.createElement("button");
+       button.setAttribute("id", "myButton");
+       button.setAttribute("class", "myButtonClass");
+       button.setAttribute("type", "button");
+       button.innerHTML = "Convert to m<sup>2</sup>";
+
     //   create and set value
       const container = document.getElementById('table-container');
       const tr = document.createElement("tr");
@@ -47,8 +54,23 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
       <td>${triangle}cm <sup>2</sup></td>
       `;
       container.appendChild(tr)
-
+      tr.appendChild(button)
 })
+////function random bg color
+function randomColor() {
+    // generate random RGB color values
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+
+    // set background color
+    document.getElementById('card-random').style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+}
+
+document.getElementById('random-color').addEventListener('mouseover', function() {
+    randomColor();
+});
+
 
 //addEventListener for rectangle
 document.getElementById('btn-rectangle').addEventListener('click', function(){
@@ -69,6 +91,13 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     //get title
     const title = getTitle('title-rectangle');
 
+     //create button
+     var button = document.createElement("button");
+     button.setAttribute("id", "myButton");
+     button.setAttribute("class", "myButtonClass");
+     button.setAttribute("type", "button");
+     button.innerHTML = "Convert to m<sup>2</sup>";
+
     //   create and set value
       const container = document.getElementById('table-container');
       const tr = document.createElement("tr");
@@ -78,7 +107,10 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
       <td>${rectangle}cm <sup>2</sup></td>
       `;
       container.appendChild(tr)
+      tr.appendChild(button)
 })
+
+
 
 //addEventListener for Parallelogram
 document.getElementById('btn-Parallelogram').addEventListener('click', function(){
@@ -91,6 +123,13 @@ document.getElementById('btn-Parallelogram').addEventListener('click', function(
     //get title
     const title = getTitle('title-parallelogram');
 
+     //create button
+     var button = document.createElement("button");
+     button.setAttribute("id", "myButton");
+     button.setAttribute("class", "myButtonClass");
+     button.setAttribute("type", "button");
+     button.innerHTML = "Convert to m<sup>2</sup>";
+
     //   create and set value
       const container = document.getElementById('table-container');
       const tr = document.createElement("tr");
@@ -100,6 +139,7 @@ document.getElementById('btn-Parallelogram').addEventListener('click', function(
       <td>${Parallelogram}cm <sup>2</sup></td>
       `;
       container.appendChild(tr)
+      tr.appendChild(button)
     
 })
 
@@ -113,6 +153,13 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     //get title
     const title = getTitle('title-rhombus');
 
+     //create button
+     var button = document.createElement("button");
+     button.setAttribute("id", "myButton");
+     button.setAttribute("class", "myButtonClass");
+     button.setAttribute("type", "button");
+     button.innerHTML = "Convert to m<sup>2</sup>";
+
     //   create and set value
       const container = document.getElementById('table-container');
       const tr = document.createElement("tr");
@@ -122,6 +169,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
       <td>${rhombus}cm <sup>2</sup></td>
       `;
       container.appendChild(tr)
+      tr.appendChild(button)
 })
 
 //addEventListener for Pentagon
@@ -134,6 +182,13 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
      //get title
      const title = getTitle('title-pentagon');
 
+      //create button
+      var button = document.createElement("button");
+      button.setAttribute("id", "myButton");
+      button.setAttribute("class", "myButtonClass");
+      button.setAttribute("type", "button");
+      button.innerHTML = "Convert to m<sup>2</sup>";
+
      //   create and set value
        const container = document.getElementById('table-container');
        const tr = document.createElement("tr");
@@ -143,6 +198,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
        <td>${pentagon}cm <sup>2</sup></td>
        `;
        container.appendChild(tr)
+       tr.appendChild(button)
 })
 
 //addEventListener for Ellipse
@@ -156,6 +212,13 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
      //get title
      const title = getTitle('title-ellipse');
 
+     //create button
+     var button = document.createElement("button");
+     button.setAttribute("id", "myButton");
+     button.setAttribute("class", "myButtonClass");
+     button.setAttribute("type", "button");
+     button.innerHTML = "Convert to m<sup>2</sup>";
+
      //   create and set value
        const container = document.getElementById('table-container');
        const tr = document.createElement("tr");
@@ -165,6 +228,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
        <td>${ellipse}cm <sup>2</sup></td>
        `;
        container.appendChild(tr)
+       tr.appendChild(button)
 })
 
 

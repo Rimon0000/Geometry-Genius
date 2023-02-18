@@ -84,7 +84,21 @@
     font-size: 19px;
     font-family: 'Inter';
     color: #414141;
-
-
 }
+
+/* convert button */
+.myButtonClass{
+    background: #1090D8;
+    border-radius: 8px;
+    width: 80px;
+    height: 25px;
+}
+#myButton{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 9px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 
